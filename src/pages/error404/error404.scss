@@ -1,0 +1,30 @@
+section.error {
+	height: 95vh;
+	display: flex;
+
+	.content {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+
+		h1  {
+			margin-bottom: 1em;
+			font-size: 2em;
+			text-align: center;
+
+			.highlight {
+				background-color: #ff5722;
+				color: white;
+			}
+		}
+
+
+		p {
+			text-decoration: underline;
+			font-style: italic;
+			cursor: pointer;
+		}
+	}
+}

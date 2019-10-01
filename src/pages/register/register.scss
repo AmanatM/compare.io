@@ -1,0 +1,146 @@
+@import '../../mixin';
+
+section.register {
+	min-height: 95vh;
+	height: auto;
+	display: flex;
+
+
+	@include l {
+		flex-direction: column;
+	}
+
+	.content-both {
+		padding-top: 100px;
+		display: flex;
+	}
+
+	.content-left {
+		background-color: #607D8B;
+		flex: 50% 0 0;
+		color: white;
+
+		@include xl {
+			padding: 0 1.5em;
+		}
+
+		@include l {
+			padding-top: 7em;
+			padding-bottom: 4em;
+		}
+
+
+
+
+		.above-slogan {
+			color: #FFC107;
+		}
+
+		h1 {
+			font-size: 3.3em;
+			margin: .8em 0;
+
+			@include xl {
+				font-size: 2.8em;
+			}
+
+			.highlight {
+				background-color: #8BC34A;
+			}
+		}
+
+		.under-slogan {
+
+			a {
+				text-decoration: underline;
+				font-style: italic;
+			}
+		}
+
+		.content {
+			margin: auto;
+		}
+
+	}
+
+	.content-right {
+		flex: 50% 0 0;
+		background-color: white;
+
+		@include xl {
+			padding: 0 1.5em;
+		}
+
+		@include l {
+			padding-top: 4em;
+			padding-bottom: 4em;
+		}
+
+
+		form {
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			max-width: 500px;
+
+
+
+			.name {
+
+				display: flex;
+
+				input {
+					width: 45%;
+				}
+
+				input#register_name {
+					margin-right: auto;
+				}
+				@include xl {
+					flex-direction: column;
+
+					input {
+						width: 100%;
+					}
+				}
+				
+			}
+
+			input {
+				border: none;
+				border-bottom: 2px solid #888888;
+				padding: .8em;
+				margin: 1.5em 0;
+				font-size: 1em;
+				font-weight: bold;
+				color: #5C5C5C;
+			}
+
+			input::placeholder {
+				color: #888888;
+			}
+
+
+
+			button.btn {
+				color: white;
+				background-color: #8BC34A;
+				align-self: flex-start;
+				padding: 1em 2em;
+			}
+
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

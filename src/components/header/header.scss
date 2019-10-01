@@ -1,0 +1,77 @@
+@import '../../mixin';
+
+header.header {
+	height: 95vh;
+	display: flex;
+	background-image: url('./bg-1.svg'), url('./bg-2.svg'), url('./bg-3.svg'), url('./bg-4.svg'), url('./bg-5.svg'), url('./bg-5.svg'), url('./bg-5.svg');
+	background-size: 300px, 300px, 300px, 200px, 100px, 50px, 60px;
+	background-position: 94% calc(100% + 150px), -150px 35%, calc(50% - 150px) - 150px, 85% 10%, 20% 20%, 28% 80%, 70% 70%;
+	background-repeat: no-repeat;
+
+	@include m {
+		background-image: url('./bg-1.svg'), url('./bg-2.svg'), url('./bg-3.svg'), url('./bg-4.svg'), none, none, none;
+		background-size: 300px, 300px, 300px, 200px, 100px, 50px, 60px;
+	}
+
+	@include s {
+		background-image: url('./bg-1.svg'), url('./bg-2.svg'), url('./bg-3.svg'), url('./bg-4.svg'), none, none, none;
+		background-size: 250px, 250px, 250px, 200px, 100px, 50px, 60px;
+		background-position: 94% calc(100% + 150px), -150px 80%, calc(50% - 150px) -90px, calc(100% + 100px) 10%, 20% 20%, 28% 80%, 70% 70%;
+	}
+
+	.content {
+		margin: auto;
+
+		h1 {
+			color: #555555;
+			font-size: 5em;
+			text-align: center;
+
+			@include m {
+				font-size: 3em;
+			}
+
+			@include s {
+				font-size: 2.3em;
+			}
+
+			.highlighted {
+				background-color: rgba(156, 224, 206, .63);
+			}
+		}
+	
+		.action-btns {
+			margin-top: 1em;
+			display: flex;
+			justify-content: center;
+			
+			button.btn {
+				color: white;
+				padding: .8em 3em;
+
+				&.about {
+					margin-right: 4em;
+					background-color: #FFC107;
+
+					@include s {
+						margin-right: 1em;
+					}
+				}
+
+				&.read {
+					background-color: #8BC34A;
+				}
+
+			}
+
+
+		}
+
+
+	}
+
+
+
+
+
+}

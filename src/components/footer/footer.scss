@@ -1,0 +1,60 @@
+@import '../../mixin';
+
+footer.footer {
+	background-color: #ABB8BE;
+	color: white;
+	font-weight: bold;
+	padding: 3em 0;
+	padding-bottom: 0;
+	
+	div.container {
+		display: flex;
+		justify-content: space-around;
+
+		@include m {
+			flex-direction: column;
+			align-items: center;
+
+			div {
+				margin: 1em 0;
+				text-align: center;
+			}
+		}
+
+		li {
+			margin: 1em 0;
+		}
+
+		.col-1 {
+
+			li {
+				width: 200px;
+			}
+
+			img {
+				width: 100%;
+			}
+
+			img.compareio-logo {
+				width: 110%;
+			}
+
+
+		}
+
+		.col-2 {
+
+		}
+
+		.col-3 {
+
+		}
+	}
+
+	div.copyright {
+		text-align: center;
+		background: #454545;
+		padding: 1em;
+		margin-top: 3em;
+	}
+}

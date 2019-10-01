@@ -1,0 +1,145 @@
+@import '../../mixin';
+
+nav.navbar {
+	color: black;
+	padding: 1em;
+	box-shadow: 0px -4px 20px 1px rgba(0, 0, 0, .4);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: white;
+	z-index: 9999;
+
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	li {
+		list-style: none;
+	}
+
+
+
+	div.container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		div.header-logo {
+			width: 200px;
+			margin-right: auto;
+
+			img {
+				width: 100%;
+			}
+		}
+			
+
+		ul.menu {
+			display: flex;
+			align-items: center;
+
+			li {
+				margin: 0 .8em;
+				font-weight: bold;
+				font-size: .9em;
+			}
+
+			button.btn {
+				color: white;
+			}
+
+			.login {
+				background-color: #607D8B;
+			}
+
+			.signup {
+				background-color: #8BC34A;
+			}
+
+		}
+
+		button.toggle-menu {
+			display: none;
+		}
+
+		@include xl {
+			button.toggle-menu {
+				display: flex;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				background: transparent;
+				position: relative;
+				z-index: 99999 ;
+				flex-wrap: wrap;
+				border: none;
+				
+				span {
+					width: 100%;
+					height: 3px;
+					background: black;
+					transition: all .2s;
+					transform-origin: 0 100%;
+
+
+					&:nth-child(2) {
+						margin: 7px 0;
+						transition: none;
+						opacity: 1;
+					}
+				}
+
+				&.active {
+					span {
+						background: white;
+
+						&:first-child {
+							transform: rotate(45deg) translate(-4px, -5px)
+						}
+
+						&:nth-child(2) {
+							opacity: 0;
+							transition: none;
+						}
+
+						&:last-child {
+							transform: rotate(-45deg) translate(1px, 2px)
+						}
+					}
+				}
+			}
+
+			ul.menu {
+				display: none;
+
+				&.mobile-menu {
+					display: flex;
+					position: absolute;
+					top: 0;
+					right: 0;
+					background: rgba(0, 0, 0, .8);
+					height: 100vh;
+					flex-direction: column;
+					padding-left: 1.8em;
+					padding-right: 1.8em;
+					width: auto;
+					color: white;
+					font-size: 1.2em;
+					z-index: 9999;
+					justify-content: center;
+
+					li {
+						margin: .7em 0;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+

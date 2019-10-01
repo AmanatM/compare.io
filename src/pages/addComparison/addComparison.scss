@@ -1,0 +1,280 @@
+@import '../../mixin';
+
+section.add-comparison {
+	height: auto;
+
+	input, textarea {
+		width: 100%;
+		max-width: 330px;
+		border: none;
+		border-bottom: 2px solid #888888;
+		padding: .8em;
+		margin: 1.5em 0;
+		font-size: 1em;
+		font-weight: bold;
+		color: #5C5C5C;
+		background: transparent;
+	}
+
+	textarea {
+
+	}
+
+	input::placeholder, textarea::placeholder {
+		color: #888888;
+	}
+
+
+	.btns {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2em;
+
+		.icon-btn {
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			display: block;
+			text-align: center;
+			width: 50px;
+			height: 50px;
+			margin: 0 .5em;
+
+			&.appear_btn {
+				transition: all .2s;
+				opacity: 0;
+				pointer-events: none;
+
+				&:first-child {
+					transform: translate(-30px, 0);
+				}
+
+				&:last-child {
+					transform: translate(30px, 0);
+				}
+
+				&.active {
+					transform: translate(0px, 0);
+					opacity: 1;
+					pointer-events: all;
+
+				}
+			}
+			
+			&.add-info {
+				width: 70px;
+				height: 70px;
+				transition: all .2s;
+
+				&.active {
+					transform: rotate(45deg);
+				}
+
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+
+
+	.content-both {
+		display: flex;
+
+		@include l {
+			flex-direction: column;
+		}
+
+		.input-container {
+			width: 100%;
+			max-width: 330px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			justify-content: flex-start;
+
+			input, textarea {
+				width: 95%;
+				margin-right: auto;
+				min-width: 95%;
+			}
+
+			.exit_btn {
+				width: 35px;
+				height: 35px;
+				cursor: pointer;
+			}
+
+			img {
+				margin: 0 auto;
+				max-width: 80%;
+			}
+		}
+
+		.both-items {
+			padding-top: 140px;
+			flex: 50% 0 0;
+			padding-left: 3em;
+			padding-right: 3em;
+			padding-bottom: 3em;
+
+			.content {
+				margin: auto;
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				max-width: 500px;
+			}
+
+			.title {
+				align-self: flex-start;
+				margin-bottom: 2em;
+				margin-left: 1em;
+			}
+
+
+
+
+		}
+
+
+		.first-item {
+			background-color: #555555;
+			color: white;
+
+			.content {
+
+			}
+
+			input, textarea {
+				border-color: white;
+				color: white;
+			}
+
+			input::placeholder, textarea::placeholder {
+				color: white;
+			}
+
+			.title {
+				color: #FFC107;
+			}
+		}
+
+		.second-item {
+
+			
+			.title {
+				color: #8BC34A;
+			}
+		}
+	}
+
+	.content-common {
+		background: #F7F7F7;
+		padding: 3em 0;
+		text-align: center;
+
+		.content {
+			max-width: 330px;
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		h3 {
+			font-size: 1.5em;
+			margin-bottom: 2em;
+		}
+
+		p {
+			color: #7E7E7E;
+		}
+
+
+		.input-container {
+			width: 100%;
+			max-width: 330px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			justify-content: flex-start;
+			margin: 1em 0;
+
+			input, textarea {
+				width: 95%;
+				margin-right: auto;
+				min-width: 95%;
+			}
+
+			.exit_btn {
+				width: 35px;
+				height: 35px;
+				cursor: pointer;
+			}
+
+			img {
+				margin: 0 auto;
+				max-width: 80%;
+			}
+
+		}
+
+		.btns {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+			.appear_btns {
+				display: flex;
+				margin-top: 1.5em;
+
+				span:first-child, span:last-child {
+					position: relative;
+					top: -60px;
+				}
+
+				span {
+					opacity: 0;
+					pointer-events: none;
+					transition: all .2s;
+					position: relative;
+
+					&:nth-child(2) {
+						top: -70px;
+					}
+
+					&.active {
+						opacity: 1;
+						pointer-events: all;
+
+						&:nth-child(2) {
+							top: 0px;
+						}
+						
+						&:first-child, &:last-child {
+							position: relative;
+							top: -30px;
+						}
+					}
+				}
+
+			}
+		}
+
+		.post-btn {
+			color: white;
+			background-color: #607D8B;
+			padding: 1.2em 2.8em;
+			margin-top: 3em;
+		}
+	}
+}
+
+
+
+
+
+
+

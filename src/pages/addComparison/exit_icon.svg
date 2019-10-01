@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.5 52.5">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #c9c9c9;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #c1c1c1;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_32" data-name="Group 32" transform="translate(-647 -814.5)">
+    <g id="Ellipse_10" data-name="Ellipse 10" class="cls-1" transform="translate(647 814.5)">
+      <circle class="cls-3" cx="26.25" cy="26.25" r="26.25"/>
+      <circle class="cls-4" cx="26.25" cy="26.25" r="25.25"/>
+    </g>
+    <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-2" width="5" height="35.24" transform="matrix(0.695, 0.719, -0.719, 0.695, 684.349, 826.794)"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-2" width="5" height="35.24" transform="matrix(0.719, -0.695, 0.695, 0.719, 659, 829.698)"/>
+  </g>
+</svg>

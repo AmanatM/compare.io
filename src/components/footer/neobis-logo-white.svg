@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 50.33">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 38px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Group_6" data-name="Group 6" transform="translate(-185 -3094)">
+    <g id="neobis" transform="translate(185 3094)">
+      <g id="Слой_1" data-name="Слой 1">
+        <path id="Path_7" data-name="Path 7" class="cls-1" d="M40.8,39.725a24.543,24.543,0,0,0,3.767-5.26c.332-.631.647-1.278.929-1.925a24.094,24.094,0,0,0,1.261-3.783,22.733,22.733,0,0,0,.564-3.4A22.184,22.184,0,0,0,47.442,23V4.33H28.79a22.186,22.186,0,0,0-2.356.116,23.348,23.348,0,0,0-3.418.581,24.494,24.494,0,0,0-3.767,1.261c-.664.282-1.294.581-1.925.913A24.277,24.277,0,0,0,12.079,11l-.548.514H25.9V25.886H11.515V11.515a25.207,25.207,0,0,0-2.456,2.871,24.227,24.227,0,0,0-4.48,10.969,23.133,23.133,0,0,0-.249,3.4V47.475H23.015a28.808,28.808,0,0,0,3.418-.249,24.344,24.344,0,0,0,10.952-4.48,26.965,26.965,0,0,0,3.418-3.02Z" transform="translate(2.855 2.855)"/>
+        <path id="Path_8" data-name="Path 8" class="cls-1" d="M14.371,10.056V0H0V14.371H14.371V10.056Z"/>
+      </g>
+    </g>
+    <text id="NEOBIS.KG" class="cls-2" transform="translate(251 3136)"><tspan x="0" y="0">NEOBIS.KG</tspan></text>
+  </g>
+</svg>

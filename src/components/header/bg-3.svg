@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.08 386.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: #ce95db;
+      }
+    </style>
+  </defs>
+  <g id="Path_10" data-name="Path 10" class="cls-1" transform="translate(0 193.04) rotate(-45)">
+    <path class="cls-2" d="M0,0H273V273H0Z"/>
+    <path class="cls-3" d="M 10 10 L 10 263 L 263 263 L 263 10 L 10 10 M 0 0 L 273 0 L 273 273 L 0 273 L 0 0 Z"/>
+  </g>
+</svg>
