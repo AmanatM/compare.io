@@ -8,3 +8,6 @@ The structure is modular(like in react)
 * I made outing made by using # in address bar and 'hashchange' event
 
 Look at code to better understand whole concept)
+
+To start code clone it to your local machine, then run _npm init_ and _npm start_
+
