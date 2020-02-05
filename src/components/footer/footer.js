@@ -30,7 +30,7 @@ let Footer = {
 
 					<div class="col-1 social">
 						<ul>
-							<li><a href="" target="_blank" rel="noopener">Github</a></li>
+							<li><a href="https://github.com/AmanatM" target="_blank" rel="noopener">Github</a></li>
 							<li><a href="" target="_blank" rel="noopener">Lorem</a></li>
 							<li><a href="" target="_blank" rel="noopener">Lorem</a></li>
 						</ul>
