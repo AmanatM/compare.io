@@ -5,7 +5,7 @@ The structure is modular(like in react)
 - SASS used
 - Webpack used
 
-* I made outing made by using # in address bar and 'hashchange' event
+* I made routing made by using # in address bar and 'hashchange' event
 
 Look at code to better understand whole concept)
 
